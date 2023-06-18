@@ -1,0 +1,187 @@
+
+@import "../extra/vars";
+@import "../extra/listas";
+@import "../extra/mapas";
+@import "../extra/mixin";
+@import "../extra/extend";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    img.logo:hover{
+        @include movimineto;
+    }
+    .nav-link{
+        @include textos;
+        text-shadow: 3px 0px 0px $color-rojo;
+    }
+    .nav-link:hover{
+        @include textos;
+        @include animadas;
+        text-shadow: 3px 0px 0px $color-verde;
+    }
+}
+body{
+    background-color: $color-lila;
+    a{
+        color: $color-blanco;
+        text-decoration: none;
+    } 
+}  
+main{
+    h1{
+        @include titulares;
+    }
+    p{
+        @include carteles;
+        @include bordes;
+    }  
+    .selector{
+        @include bordes;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin: 2rem;
+        background-color: $color-rosado;
+        margin: 2rem;
+        padding: 2rem;
+    }
+    .selector select{
+        height: 2rem;
+        border-radius: 100px;
+        background-color: $color-lila;
+        font-family: 'Luckiest Guy';
+        color: $color-blanco;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    .reproductor{
+        @include bordes;
+        display: grid;
+        grid-area: 1fr;
+        justify-content: center;
+        text-align: center;
+        margin: 2rem;
+        padding: 2rem;
+        gap: 1rem;
+        background-color: $color-verde;
+    }
+    div a{
+        @include textos;
+        font-size: 2rem;
+        text-shadow: 5px 3px 5px $color-negro;
+    }
+    section.botones{
+        background-color: $color-amarillo;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    button.juega{
+        @include botones;
+        $gradiente-verde;
+    }  
+    button.juega:hover{
+            transform: scale(1.2);
+    }
+    button.dona{
+        @include botones;
+        $gradiente-rojo;
+    }  
+    button.dona:hover{
+        transform: scale(1.2);
+    }
+    button.comparte{
+        @include botones;
+        $gradiente-azul;
+    }   
+    button.comparte:hover{
+        transform: scale(1.2);
+    } 
+}
+footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    header{
+        background-color:$color-fondo-tablet
+    }
+    main h1 {
+        text-align: center;
+        font-family: 'Luckiest Guy';
+        color: $color-verde;
+        text-shadow: 3px 0px 0px $color-blanco;
+    }
+    main p{
+        background-image: $gradiente-morado;
+    }
+    main section.botones{
+        background-color: $color-rosado;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        background-color: $color-fondo-tablet;
+    }
+    .orlando{
+        display: none;
+    }
+    .camarones{
+        display: none;
+    }
+}
+@media screen and (min-width:1024px) {
+    header{
+       background-color: $color-fondo-escritorio;
+    }
+    main h1 {
+        text-align: center;
+        font-family: 'Luckiest Guy';
+        color:$color-amarillo;
+        text-shadow: 3px 0px 0px $color-blanco;
+    }
+    main section.botones{
+        background-color: $color-verde;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        background-color: $color-fondo-escritorio;
+    }
+    .orlando{
+        display: none;
+    }
+    .algas{
+        display: none;
+    }
+    .camarones{
+        display: block;
+    }
+
+}

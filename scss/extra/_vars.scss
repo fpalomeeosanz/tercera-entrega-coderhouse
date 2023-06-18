@@ -1,0 +1,25 @@
+
+// paleta de colores dispositivos 
+$color-fondo-celular: rgb(65, 161, 229);
+$color-fondo-tablet: rgb(43, 56, 138);
+$color-fondo-escritorio: rgb(10, 7, 46);
+
+// paleta de colores elementos
+$color-verde: rgb(81, 136, 41);
+$color-rojo: rgb(226, 51, 43);
+$color-amarillo: rgb(230, 136, 41);
+$color-blanco: rgb(255, 255, 255);
+$color-negro: rgb(0, 0, 0);
+
+// paleta de colores auxiliares
+$color-lila: rgb(93, 94, 230);
+$color-rosado: rgb(210, 74, 219);
+$color-morado: rgb(69, 24, 139);
+$color-gris: rgb(108, 108, 108);
+$color-azul: rgb(19, 9, 128);
+
+// gradientes 
+$gradiente-rojo:linear-gradient(rgb(226, 51, 43),rgb(0, 0, 0));
+$gradiente-azul:linear-gradient( rgb(19, 9, 128), rgb(0, 0, 0));
+$gradiente-verde:linear-gradient(rgb(81, 136, 41),rgb(0, 0, 0));
+$gradiente-morado:linear-gradient(rgb(117, 71, 255), rgb(17, 64, 251) );

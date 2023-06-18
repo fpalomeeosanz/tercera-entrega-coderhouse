@@ -1,0 +1,44 @@
+@mixin botones{
+    height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-family: 'Luckiest Guy';
+    text-shadow: 3px 0px 0px $color-negro;
+    text-align: center;
+    color: $color-blanco;
+    border-radius: 100px;
+}
+@mixin carteles{
+    text-align: center;
+    font-family: 'Luckiest Guy';
+    color: $color-blanco;
+    padding: 2rem;
+    margin: 2rem;
+    background-image: $gradiente-morado;
+    text-shadow: 5px 3px 5px $color-negro;
+}
+@mixin textos{
+    font-family: 'Luckiest Guy';
+    color: $color-blanco; 
+}
+@mixin titulares{
+    font-family: 'Luckiest Guy';
+    font-size: 3rem;
+    color:$color-rosado;
+    text-shadow: 3px 0px 0px $color-blanco;
+    margin-top: 2rem;
+    text-align: center;
+}
+@mixin bordes{
+    border-radius: 100px;
+    border: 5px dotted $color-amarillo;
+}
+@mixin movimineto{
+    transform: scale(0.8);
+    rotate: -10deg;
+    transition: 3s;
+}
+@mixin animadas{
+    transform: scale(1.5) rotate(20deg);
+    transition: 3s;
+}
